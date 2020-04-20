@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Book Tracker</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header__brand" id="brand">
+      <span class="iconify book-icon" data-icon="emojione:blue-book" data-inline="false"></span>
+      <h1>
+        Book Tracker
+      </h1>
+    </div>
+    <div class="header__delete-all-container">
+      <a id="delete-all-button">Clear reading list</a>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="input-container">
+    <form class="form">
+      <div class="input-container__form">
+        <input class="input" placeholder="Search..." id="input" pattern="[a-zA-Z0-9- ]+" required />
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+        <button id="clear-button" class="clearButton hidden">
+          <i class="fa fa-times-circle"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Spinner -->
+  <div class="spinner-container">
+    <div id="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <!-- Css grid -->
+  <div class="container">
+    <div class="left-half">
+      <!-- Books -->
+      <div id="books-title">
+        <h1>Add to your reading list</h1>
+      </div>
+      <div id="books-container"></div>
+    </div>
+
+    <div class="right-half">
+      <!-- Favorites -->
+      <h1 id="favorites-title">My reading list</h1>
+      <p id="favorites-message"></p>
+      <div id="favorites-container"></div>
+    </div>
+  </div>
+
+  <!-- Snackbar -->
+  <div id="snackbar"></div>
+
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
