@@ -1,0 +1,5 @@
+[1230/123727.357:ERROR:registration_protocol_win.cc(103)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[1230/123912.379:ERROR:registration_protocol_win.cc(103)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[1230/123912.710:ERROR:registration_protocol_win.cc(103)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[1230/124013.909:ERROR:registration_protocol_win.cc(103)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[1230/124013.913:ERROR:registration_protocol_win.cc(103)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)

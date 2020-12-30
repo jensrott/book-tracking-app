@@ -8,7 +8,8 @@ const headerBrand = document.getElementById("brand");
 tippy('#brand', {
   content: "Change Theme",
   arrow: false,
-  followCursor: true
+  followCursor: true,
+  placement: "bottom"
 });
 
 // Spinner
